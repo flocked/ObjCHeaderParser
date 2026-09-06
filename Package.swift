@@ -54,9 +54,10 @@ let package = Package(
         .macOS(.v12)
     ],
     products: [
-        .library(name: "Clang", targets: ["Clang"]),
-        .library(name: "ObjCParser", targets: ["ObjCParser"]),
-        .executable(name: "objc-parser-demo", targets: ["ObjCParserDemo"]),
+        .library(
+            name: "ObjCParser",
+            targets: ["ObjCParser"]
+        ),
     ],
     targets: [
         .target(
